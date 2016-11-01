@@ -78,8 +78,10 @@ function prepPathForTemplate(path) {
   return path;
 }
 
+a = 1;
 gulp.task('connect', [], function() {
 
+  console.log("BIIIIIIIIIIIIIIIIIIIRL ");
   function proxyToPreprod(req, response) {
     var x = request("https://preprod.pol.is" + req.originalUrl);
     x.on("error", function(err) {
@@ -155,8 +157,11 @@ gulp.task('connect', [], function() {
   app.use(/^\/wimp$/, express.static(path.join(destRootBase, "wimp.html")));
   app.use(/^\/try$/, express.static(path.join(destRootBase, "try.html")));
 
-  app.listen(5001);
-  console.log('localhost:5001');
+  if(a){
+  app.listen(5009);
+  a = 0;
+  }
+  console.log('localhost:5009');
 });
 
 function getGitHash() {

@@ -29,7 +29,6 @@ var fr = require("./strings/fr.js");
 var it = require("./strings/it.js");
 
 // Brazilian Portuguese (all portuguese speakers are temporarily using the same file.)
-var pt_br = require("./strings/pt_br.js");
 
 var strings = en_us;
 
@@ -67,11 +66,7 @@ preloadHelper.acceptLanguagePromise.then(function() {
     else if (languageCode.match(/^fr/)) {
       _.extend(strings, fr);
     }
-    else if (
-      languageCode.match(/^pt/) ||	// To help other Portuguese speaker participants until its specific translation is not here
-      languageCode.match(/^pt-PT/) || 	// To help Portuguese participantes until an specific translation is not here
-      languageCode.match(/^pt-BR/)) {
-      _.extend(strings, pt_br);
+    else {
     }
   });
 });

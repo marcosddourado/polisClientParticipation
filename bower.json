@@ -2,7 +2,7 @@
   "name": "dashboard-require",
   "version": "0.0.0",
   "dependencies": {
-    "backbone": "git://github.com/mbjorkegren/backbone#polis",
+    "backbone": "1.0",
     "underscore": "~1.5.2",
     "thorax": "~2.0",
     "bootstrap": "~3.1.1",
@@ -10,14 +10,13 @@
     "font-awesome": "~4.1.0",
     "d3-tip": "~0.6.1",
     "owlcarousel": "~1.3.2",
-    "handlebones": "git://github.com/mbjorkegren/handlebones#master",
+    "handlebones": "0.0.1",
     "bootstrap-sass-official": "~3.2.0",
     "markdown": "~0.5.0",
     "deepcopy": "~0.4.0"
   },
   "resolutions": {
     "underscore": "1.6.0",
-    "handlebars": "1.1.2",
-    "backbone": "polis"
+    "handlebars": "1.1.2"
   }
 }
